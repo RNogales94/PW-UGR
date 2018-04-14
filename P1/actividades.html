@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/master.css">
+  <style>
+
+
+  .noticia{
+    display: grid;
+    grid-template-areas:'title title title title'
+                        'source source source date'
+                        'preview preview preview preview';
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px solid #2196F3;
+    margin: 2%;
+    padding: 1%;
+    text-decoration: none;
+    float: right;
+  }
+
+  .noticia-title {
+    grid-area: title;
+    font-size: x-large;
+    background-color: red;
+    max-width: 50%;
+    grid-column:  1;
+    float: right;
+  }
+  .noticia-title > a {
+    text-decoration: underline;
+    background-color: red;
+  }
+  .noticia-fuente {
+    grid-area: source;
+    font-size: large;
+    background-color: red;
+    grid-column:  2 / 1;
+    float: right;
+
+  }
+  .noticia-fecha {
+    grid-area: date;
+    font-size: large;
+    background-color: red;
+    grid-column:  span 1;
+    float: right;
+   }
+  .noticia-preview {
+    grid-area: preview;
+    font-size: medium;
+    background-color: red;
+    margin-left: 20%;
+    grid-column:  2 / 1;
+    float: right;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="title">
+      <div>
+        Titulo Gimnasio
+      </div>
+
+    </div>
+    <div class="logo">
+      <div>
+        <img src="./img/logo.png" alt="Logo">
+      </div>
+    </div>
+    <div class="login">
+        Rafa
+    </div>
+    <div class="left">
+
+    <div class="actividad">
+      <img src="./img/actividad.png" alt="">
+      <div class="actividad-title">
+          Titulo Actividad 1
+      </div>
+      <div class="actividad-link">
+        <a href="#" class="nodecor">Ver actividad</a>
+      </div>
+    </div>
+
+    <div class="actividad">
+      <img src="./img/actividad.png" alt="">
+      <div class="actividad-title">
+          Titulo Actividad 2
+      </div>
+      <div class="actividad-link">
+        <a href="#" class="nodecor">Ver actividad</a>
+      </div>
+    </div>
+
+    <div class="actividad">
+      <img src="./img/actividad.png" alt="">
+      <div class="actividad-title">
+          Titulo Actividad 3
+      </div>
+      <div class="actividad-link">
+        <a href="#" class="nodecor">Ver actividad</a>
+      </div>
+    </div>
+
+    <div class="actividad">
+      <img src="./img/actividad.png" alt="">
+      <div class="actividad-title">
+          Titulo Actividad 4
+      </div>
+      <div class="actividad-link">
+        <a href="#" class="nodecor">Ver actividad</a>
+      </div>
+    </div>
+
+    </div>
+    <section class="right">
+      <div class="noticia">
+        <h3 class="noticia-title">
+          <a href="">Paleotraining abre su primer gimnasio en Madrid</a>
+        </h3>
+        <h4 class="noticia-fuente"> SportNews</h4>
+        <h5 class="noticia-fecha"> Hace 8 horas </h5>
+        <p class="noticia-preview">
+          Texto de ejemplo para la noticia sjfhsjfh sjfhdksajhf  skjdhf jhsdfh kjshfsd fhjsdf
+Texto de ejemplo para la noticia sjfhsjfh sjfhdksajhf  skjdhf jhsdfh kjshfsd fhjsdf
+Texto de ejemplo para la noticia sjfhsjfh sjfhdksajhf  skjdhf jhsdfh kjshfsd fhjsdf
+Texto de ejemplo para la noticia sjfhsjfh sjfhdksajhf  skjdhf jhsdfh kjshfsd fhjsdf
+        </p>
+      </div>
+
+    </section>
+    <section class="footer">
+
+
+    </section>
+  </div>
+
+</body>
+</html>
