@@ -54,6 +54,15 @@ body {
   margin: 1%;
 }
 
+.activity:hover{
+  background-color: rgb(72, 67, 180);
+  color: white;
+}
+
+.activity:hover > .no-link-style{
+  color: white;
+}
+
 .activity > img {
   grid-column-start: 1;
   grid-column-end: 6;
@@ -355,12 +364,17 @@ body {
   overflow-x: visible;
 }
 
-.main > a {
+.main-menu-item {
   display: block;
   padding: 1%;
   margin: 1%;
   text-align: center;
   background-color: #ebfcff;
+}
+
+.main-menu-item:hover {
+  background-color: rgb(72, 67, 180);
+  color: white;
 }
 
 .footer {
