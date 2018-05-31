@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/master.css">
+  <script src="./js/registerValidator.js"></script>
 
 </head>
 
@@ -17,6 +18,7 @@
         Titulo Gimnasio
       </a>
     </h1>
+
     </div>
     <div class="header-logo">
       <a href="./index.html">
@@ -29,46 +31,51 @@
   </section>
 
   <section class="map-osm">
-    <form method="post" action="index.html" class="formulario">
+    <form method="post" action="./registro.php" class="formulario" onsubmit="return validateRegister();">
       <fieldset>
         <legend> Datos de Registro </legend>
         <ul>
           <li>
-            <label for="Nombre">Nombre:</label>
-            <input type="text" name="Nombre" />
-          </li>
-          <li>
-            <label for="Apellidos">Apellidos:</label>
-            <input type="text" name="Apellidos" />
-          </li>
-          <li>
-            <label for="email">Email:</label>
-            <input type="email" name="email" />
+            <label for="Username">Nombre de usuario</label>
+            <input id="usernameInput" name="username" type="text">
           </li>
           <li>
             <label for="pass">Contraseña</label>
-            <input name="pass" type="password"></li>
+            <input id="passwordInput" name="pass" type="password">
+          </li>
+          <li>
+            <label for="Nombre">Nombre:</label>
+            <input id="nameInput" type="text" name="name" required/>
+          </li>
+          <li>
+            <label for="Apellidos">Apellidos:</label>
+            <input id="surnameInput" type="text" name="surname" required />
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input id="emailInput" type="email" name="email" required/>
+          </li>
           <li>
             <label for="pic">Foto</label>
-            <input type="file" name="pic" accept=".png, jpg, .jpeg,">
+            <input id="picInput" type="file" name="pic" accept=".png, jpg, .jpeg,">
             <li>
               <label for="tel">Teléfono:</label>
-              <input type="tel" name="telephone" />
+              <input id="phoneInput" type="tel" name="phone" required/>
             </li>
             <li>
               <label for="birth">Fecha de nacimiento:</label>
-              <input type="date" name="birth" />
+              <input id="birthdayInput" type="date" name="birthday" required />
             </li>
             <li>
               <label>Sexo</label>
-              <input type="radio" name="menu" value="Hombre" />
+              <input id="hombreInput" type="radio" name="gender" value=0 checked/>
               <label for="radiobutton2">Hombre</label>
-              <input type="radio" name="menu" value="Mujer" checked/>
+              <input id="mujerInput" type="radio" name="gender" value=1 />
               <label for="radiobutton1">Mujer</label>
             </li>
             <li>
               <label for="Direccion">Dirección:</label>
-              <input type="text" name="Direccion" />
+              <input type="text" name="address" required />
             </li>
             <li>
               <input type="submit" value="Enviar" />
@@ -82,7 +89,7 @@
   <section class="footer">
     <a href="" class="link">Contacto</a>
     <p> - </p>
-    <a href="./como_se_hizo.pdf" class="link">Como se hizo</a>
+    <a href="./como_se_hizo2.pdf" class="link">Como se hizo</a>
   </section>
 
 </body>

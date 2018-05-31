@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/master.css">
-
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="./js/loginvalidator.js"></script>
 </head>
 
 <body class="grid-container">
@@ -27,15 +28,15 @@
     </div>
     <div class="header-login">
 
-      <form action="./index2.html" method="get">
+      <form action="./login.php" method="post" onsubmit="return validateLogin();">
         <div>
           <span><i class="fas fa-user fa-xs"></i></span>
-          <input type="text" name="username" placeholder="User name">
+          <input id="usernameInput" type="text" name="username" placeholder="User name">
         </div>
 
         <div>
           <span><i class="fas fa-lock fa-xs"></i></span>
-          <input type="password" name="pass" placeholder="Password">
+          <input id="passwordInput" type="password" name="pass" placeholder="Password">
         </div>
 
         <div>
@@ -68,7 +69,7 @@
   <section class="footer">
     <a href="" class="link">Contacto</a>
     <p> - </p>
-    <a href="./como_se_hizo.pdf" class="link">Como se hizo</a>
+    <a href="./como_se_hizo2.pdf" class="link">Como se hizo</a>
   </section>
 
 </body>
